@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\UserAppController;
+
+Route::get('userapps', [UserAppController::class, 'index']);
+Route::get('userapps/{id}', [UserAppController::class, 'show']);
+
+

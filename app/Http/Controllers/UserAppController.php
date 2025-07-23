@@ -19,7 +19,7 @@ public function index()   // http://api.codersfree.test/v1/user_apps?included=po
 
     $userApps = $this->fetchDataFromApi($url . '/user_apps');
 
-    return view('user_apps.index', compact('userApps'));
+    return view('userApp.index', compact('userApps'));
 }
 
 public function show($id)
@@ -28,7 +28,7 @@ public function show($id)
 
     $userApp = $this->fetchDataFromApi($url . '/user_apps/' . $id);
 
-    return view('user_apps.show', compact('userApp'));
+    return view('userApp.show', compact('userApp'));
 }
 
 }
