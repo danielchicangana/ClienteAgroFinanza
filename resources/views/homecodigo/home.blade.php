@@ -65,13 +65,17 @@
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="{{ asset('imagenes/imagen_2025-07-03_232159777-removebg-preview.png') }}" alt="Logo">
+            <img src="{{ asset('img/imagen_2025-07-03_232159777-removebg-preview.png') }}" 
+                 alt="logo" 
+                 style="height: 80px; width: 80px;" 
+                 class="me-2">
             <span class="fw-bold text-dark">AgroFinanzas</span>
         </a>
 
         <div class="ms-auto d-flex gap-2">
+            <a href="{{ url('/') }}" class="btn btn-navegacion">Inicio</a>
             <a href="{{ url('registrarse') }}" class="btn btn-navegacion">Registrarse</a>
-            <a href="{{ url('iniciar_sesion') }}" class="btn btn-navegacion">Iniciar Sesión</a>
+            <a href="{{ url('login') }}" class="btn btn-navegacion">Iniciar Sesión</a>
         </div>
     </div>
 </nav>

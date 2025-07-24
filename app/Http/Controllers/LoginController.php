@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
-    public function showLoginForm()
+    public function show()
     {
-        return view('welcome.login');
+        return view('welcome.login'); // o el nombre correcto de tu vista
     }
 
-    public function login(Request $request)
+    public function authenticate(Request $request)
     {
-        // Aquí la lógica de autenticación
+        // Aquí validas los datos del login y haces el intento de autenticación
     }
 }
 

@@ -8,8 +8,10 @@
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Estilo personalizado (opcional, puedes agregar más si hace falta) -->
+    <!-- Estilo personalizado -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
         body, html {
             height: 100%;
             margin: 0;
@@ -17,7 +19,7 @@
         }
 
         .bg-cover {
-            background-image: url('/imagenes/photo-1677125671399-65852c6dfb05.avif');
+            background-image: url('{{ asset('img/photo-1677125671399-65852c6dfb05.avif') }}');
             background-size: cover;
             background-position: center;
             position: absolute;
@@ -42,33 +44,56 @@
         .toggle-password {
             cursor: pointer;
         }
+
+        .btn-navegacion {
+            font-family: 'Poppins', sans-serif;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #ffffff;
+            background: linear-gradient(135deg, #38ef7d, #11998e);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+        }
+
+        .btn-navegacion:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #42f5b6, #1dd1a1);
+        }
     </style>
 </head>
 <body>
 
     <div class="bg-cover"></div>
 
-    <!-- Navbar -->
+    <!-- NAVBAR AÑADIDO AQUÍ -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="/imagenes/imagen_2025-07-03_232159777-removebg-preview.png" alt="Logo" class="logo me-2">
-                <span class="fw-bold">AgroFinanzas</span>
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="{{ asset('img/imagen_2025-07-03_232159777-removebg-preview.png') }}" alt="Logo" class="logo me-2">
+                <span class="fw-bold">AgroFinanzas</span>    {{--  puede ser que lo quitemos en un futuro--}}
             </a>
-            <div class="d-flex">
-                <a href="/home" class="btn btn-success me-2">Home</a>
-                <a href="/registrarse" class="btn btn-outline-success">Registrarse</a>
-            </div>
+            <div class="d-flex gap-2">
+                <a href="{{ url('home') }}" class="btn-navegacion">Home</a>
+                <a href="{{ url('registrarse') }}" class="btn-navegacion">Registrarse</a>
+</div>
+
         </div>
     </nav>
+    <!-- FIN NAVBAR -->
 
     <!-- Login Card -->
     <div class="container d-flex align-items-center justify-content-center" style="min-height: 100vh;">
         <div class="login-card col-md-6 col-lg-4">
 
             <div class="text-center mb-3">
-                <img src="/imagenes/imagen_2025-07-03_232159777-removebg-preview.png" alt="Logo" class="logo rounded-circle mb-2">
-                <h3>Inicio</h3>
+                <img src="{{ asset('img/imagen_2025-07-03_232159777-removebg-preview.png') }}" alt="Logo" class="logo rounded-circle mb-2">
+                <h3>Inicio de Sesión</h3>
             </div>
 
             <form method="POST" action="{{ route('login') }}">
@@ -93,7 +118,7 @@
                 </div>
 
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-success">Iniciar sesión</button>
+                    <button type="submit" class="btn-navegacion">Iniciar sesión</button>
                 </div>
             </form>
 
