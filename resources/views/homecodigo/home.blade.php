@@ -73,7 +73,7 @@
         </a>
 
         <div class="ms-auto d-flex gap-2">
-            <a href="{{ url('/') }}" class="btn btn-navegacion">Inicio</a>
+           
             <a href="{{ url('registrarse') }}" class="btn btn-navegacion">Registrarse</a>
             <a href="{{ url('login') }}" class="btn btn-navegacion">Iniciar Sesión</a>
         </div>
@@ -121,10 +121,10 @@
             </div>
             <div class="col-md-4 mb-4">
                 <h5>Correos Electrónicos</h5>
-                <p>jeanc1778@gmail.com</p>
+                <p>chicanganad9@gmail.com</p>
                 <p>forcemenrtartu@gmail.com</p>
                 <p>luisestebannarvaez82@gmail.com</p>
-                <p>chicanganad9@gmail.com</p>
+           
             </div>
         </div>
     </div>

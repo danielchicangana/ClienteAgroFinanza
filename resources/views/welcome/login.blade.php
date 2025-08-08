@@ -118,7 +118,9 @@
                 </div>
 
                 <div class="d-grid">
-                    <button type="submit" class="btn-navegacion">Iniciar sesión</button>
+
+                    <a href="{{ url('/inicio') }}" class="btn-navegacion">iniciar sesión</a>
+                    {{-- <button type="submit" class="btn-navegacion">Iniciar sesión</button> --}}
                 </div>
             </form>
 
@@ -138,6 +140,7 @@
                 passwordInput.type = 'text';
                 icon.textContent = '🙈';
             } else {
+
                 passwordInput.type = 'password';
                 icon.textContent = '👁️';
             }

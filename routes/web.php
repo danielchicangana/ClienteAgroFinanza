@@ -27,3 +27,12 @@ use App\Http\Controllers\RegistrarseController;
 
 Route::get('/registrarse', [RegistrarseController::class, 'show']);
 
+
+
+
+
+use App\Http\Controllers\InicioController;
+
+Route::get('/inicio', [InicioController::class, 'index']);
+
+

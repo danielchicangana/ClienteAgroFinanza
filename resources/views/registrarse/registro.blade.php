@@ -116,9 +116,12 @@
                 <h1 class="h5 mb-0 fw-bold">AgroFinanzas</h1>
             </div>
             <div class="d-flex gap-2">
+                 
                 <a href="{{ url('/home') }}" class="btn-navegacion">Home</a>
                 <a href="{{ url('/login') }}" class="btn-navegacion">Iniciar Sesión</a>
+
             </div>
+
         </div>
     </nav>
 
@@ -141,7 +144,7 @@
                 </div>
 
                 <div class="mt-3">
-                    <button type="submit" class="btn-navegacion">Registrarse</button>
+                   <a href="{{ url('/login') }}" class="btn-navegacion">Registrarse</a>
                 </div>
             </form>
 
