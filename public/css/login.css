@@ -1,0 +1,20 @@
+/* Fondo de toda la vista login */
+.login-background {
+    background: linear-gradient(135deg, #38ef7d, #11998e);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Caja del formulario */
+.login-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}

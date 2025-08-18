@@ -74,7 +74,7 @@
         </a>
 
         <div class="ms-auto d-flex gap-2">
-            <a href="{{ url('registrarse') }}" class="btn btn-navegacion">Registrarse</a>
+            <a href="{{ url('register') }}" class="btn btn-navegacion">Registrarse</a>
             <a href="{{ url('login') }}" class="btn btn-navegacion">Iniciar Sesión</a>
         </div>
     </div>

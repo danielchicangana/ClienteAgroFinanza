@@ -57,7 +57,6 @@
         .footer a:hover {
             color: #139422;
         }
-        /* 🔹 Estilo para el link activo */
         .nav-link.active {
             font-weight: 600;
             color: #11998e !important;
@@ -98,20 +97,18 @@
                     </li>
                 </ul>
 
-                <!-- Acciones -->
+                <!-- Acciones según sesión -->
                 <div class="d-flex gap-2">
-                    @guest
-                        <a href="{{ url('registrarse') }}" class="btn btn-navegacion">Registrarse</a>
+                    @if(!session()->has('user'))
+                        <a href="{{ url('register') }}" class="btn btn-navegacion">Registrarse</a>
                         <a href="{{ url('login') }}" class="btn btn-navegacion">Iniciar Sesión</a>
-                    @endguest
-
-                    @auth
-                        <a href="{{ url('perfil') }}" class="btn btn-navegacion">Mi Perfil</a>
+                    @else
+                        <a href="{{ url('perfil') }}" class="btn btn-navegacion">Perfil</a>
                         <form action="{{ url('logout') }}" method="POST" class="d-inline">
                             @csrf
-                            <button type="submit" class="btn btn-navegacion">Cerrar Sesión</button>
+                           <a href="{{ url('logout') }}" class="btn btn-navegacion">Cerrar Sesión</a>
                         </form>
-                    @endauth
+                    @endif
                 </div>
             </div>
         </div>
