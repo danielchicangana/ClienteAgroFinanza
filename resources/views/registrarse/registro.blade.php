@@ -32,7 +32,7 @@
         }
 
         .navbar {
-            background-color: #f8f8f8;
+            background-color: #c1e9ccff;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             position: fixed;
             top: 0;

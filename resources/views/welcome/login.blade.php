@@ -59,6 +59,9 @@
             transition: all 0.3s ease-in-out;
             text-decoration: none;
         }
+        .navbar {
+      background-color: #c1e9ccff !important;
+    }
 
         .btn-navegacion:hover {
             transform: scale(1.05);

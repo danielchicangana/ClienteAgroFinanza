@@ -36,3 +36,48 @@ use App\Http\Controllers\InicioController;
 Route::get('/inicio', [InicioController::class, 'index']);
 
 
+use App\Http\Controllers\EditarPerfilController;
+
+Route::get('/editar-perfil', [EditarPerfilController::class, 'index']);
+
+
+use App\Http\Controllers\PerfilController;
+
+Route::get('/perfil', [PerfilController::class, 'index']);
+
+
+
+use App\Http\Controllers\FinanzasController;
+Route::get('/Finanzas', [FinanzasController::class, 'index']);
+
+
+use App\Http\Controllers\GastosController;
+Route::get('/Gastos', [GastosController::class, 'index']);
+
+
+use App\Http\Controllers\IngresosController;
+Route::get('/Ingresos', [IngresosController::class, 'index']);
+
+
+use App\Http\Controllers\HistorialController;
+Route::get('/Historial', [HistorialController::class, 'index']);
+
+
+use App\Http\Controllers\ComentariosController;
+Route::get('/comentarios', [ComentariosController::class, 'index']);
+
+
+use App\Http\Controllers\AguacateController;
+Route::get('/aguacate', [AguacateController::class, 'index']);
+
+use App\Http\Controllers\CafeController;
+Route::get('/cafe', [CafeController::class, 'index']);
+
+use App\Http\Controllers\AgronomiaController;
+Route::get('/agronomia', [AgronomiaController::class, 'index']);
+
+use App\Http\Controllers\GraficosController;
+Route::get('/graficos', [GraficosController::class, 'index']);
+
+use App\Http\Controllers\GallinaController;
+Route::get('/gallina', [GallinaController::class, 'index']);

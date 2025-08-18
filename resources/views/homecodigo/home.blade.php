@@ -20,7 +20,7 @@
             background-color: #eaf7e9;
         }
         .navbar {
-            background-color: #f8f8f8;
+            background-color: #c1e9ccff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .navbar-brand img {
@@ -45,7 +45,8 @@
             width: 100%;
             height: 300px;
             object-fit: cover;
-            border-radius: 10px;
+            display: block;
+            border-radius: 0;
         }
         .footer {
             background-color: #1b1a1a;
@@ -69,11 +70,10 @@
                  alt="logo" 
                  style="height: 80px; width: 80px;" 
                  class="me-2">
-            <span class="fw-bold text-dark">AgroFinanzas</span>
+            <span class="fw-bold text-dark"></span>
         </a>
 
         <div class="ms-auto d-flex gap-2">
-           
             <a href="{{ url('registrarse') }}" class="btn btn-navegacion">Registrarse</a>
             <a href="{{ url('login') }}" class="btn btn-navegacion">Iniciar Sesión</a>
         </div>
@@ -81,12 +81,12 @@
 </nav>
 
 <!-- Contenido principal -->
-<main class="container pt-5 mt-5">
+<main class="pt-5 mt-5">
     <div class="mb-4">
         <img class="imagenH" src="https://images.unsplash.com/photo-1677123618781-a713408ebc59?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagen granja">
     </div>
 
-    <section class="text-center mb-5">
+    <section class="text-center mb-5 container">
         <h1 class="mb-3">¿Quiénes somos?</h1>
         <p class="text-justify mx-auto" style="max-width: 800px;">
             AgroFinanzas es una plataforma digital comprometida con el fortalecimiento del sector rural. Nacemos con la misión de apoyar a los agricultores en el manejo eficiente de sus finanzas, el cuidado responsable de sus cultivos y el bienestar de sus animales, brindándoles herramientas prácticas, accesibles y adaptadas a sus realidades.
@@ -124,13 +124,12 @@
                 <p>chicanganad9@gmail.com</p>
                 <p>forcemenrtartu@gmail.com</p>
                 <p>luisestebannarvaez82@gmail.com</p>
-           
             </div>
         </div>
     </div>
 </footer>
 
-<!-- Bootstrap JS (opcional si necesitas interactividad) -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
