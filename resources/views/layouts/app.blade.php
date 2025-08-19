@@ -87,13 +87,13 @@
                         <a class="nav-link {{ request()->is('inicio') ? 'active' : '' }}" href="{{ url('inicio') }}">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->is('gallina') ? 'active' : '' }}" href="{{ url('gallina') }}">Gallina</a>
+                        <a class="nav-link {{ request()->is('Finanzas') ? 'active' : '' }}" href="{{ url('Finanzas') }}">Finanzas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->is('graficos') ? 'active' : '' }}" href="{{ url('graficos') }}">Gráficos</a>
+                        <a class="nav-link {{ request()->is('graficos') ? 'active' : '' }}" href="{{ url('graficos') }}">Agronomia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ request()->is('contacto') ? 'active' : '' }}" href="{{ url('contacto') }}">Contacto</a>
+                        <a class="nav-link {{ request()->is('contacto') ? 'active' : '' }}" href="{{ url('contacto') }}">Recomendaciones</a>
                     </li>
                 </ul>
 

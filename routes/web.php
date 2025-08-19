@@ -55,6 +55,16 @@ Route::get('/perfil/editar', [PerfilController::class, 'edit'])->name('perfil.ed
 // Guardar cambios
 Route::put('/perfil/{id}', [PerfilController::class, 'update'])->name('perfil.update');
 
+use App\Http\Controllers\FinanceClienteController;
+Route::get('/finances', [FinanceClienteController::class, 'index'])->name('client.index');
+
+// Formularios
+Route::get('/finances/income/create', [FinanceClienteController::class, 'createIncome'])->name('client.income.create');
+Route::post('/finances/income', [FinanceClienteController::class, 'storeIncome'])->name('client.income.store');
+
+Route::get('/finances/expense/create', [FinanceClienteController::class, 'createExpense'])->name('client.expense.create');
+Route::post('/finances/expense', [FinanceClienteController::class, 'storeExpense'])->name('client.expense.store');
+
 
 
 

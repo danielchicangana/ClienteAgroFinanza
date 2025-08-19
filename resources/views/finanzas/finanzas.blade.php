@@ -281,21 +281,21 @@
 
     <div class="finanzas-container">
   <div class="finanza-card">
-    <a href="{{ url('/Gastos') }}">
+    <a href="{{ url('/finances/expense/create') }}">
       <img src="{{ asset('img/gastos2.avif') }}" alt="Gastos Mensuales" class="img-card" />
       <div class="textog">Gastos Mensuales</div>
     </a>
   </div>
 
   <div class="finanza-card">
-    <a href="{{ url('/Ingresos') }}">
+    <a href="{{ url('/finances/income/create') }}">
       <img src="{{ asset('img/ingresos.avif') }}" alt="Ingresos Mensuales" class="img-card" />
       <div class="textog">Ingresos Mensuales</div>
     </a>
   </div>
 
   <div class="finanza-card">
-    <a href="{{ url('/Historial') }}">
+    <a href="{{ url('/finances') }}">
       <img src="https://cdn-icons-png.flaticon.com/512/1999/1999255.png" alt="Historial" class="img-card" />
       <div class="textog">Historial</div>
     </a>
